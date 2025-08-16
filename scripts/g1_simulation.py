@@ -137,7 +137,7 @@ if __name__ == '__main__':
             dt_wall = t2_wall - t1_wall
             dt_sleep = dt_sim - dt_wall
             if dt_sleep > 0.0:
-                time.sleep(dt_sleep * 0.9)
+                time.sleep(dt_sleep)
 
         # update the camera position
         px_base = data.qpos[mj_idx.q_base_pos_idx[0]]
